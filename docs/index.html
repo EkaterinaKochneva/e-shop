@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__content container">
+			<div class="top-header__column">
+				<a class="top-header__location" href="#">
+					Санкт-Петербург
+					<svg class="top-header__location-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__menu menu-top">
+					<!-- <button type="button" class="menu__icon icon-menu" id="navToggle"><span></span></button> -->
+					<nav class="menu-top__body">
+						<ul class="menu-top__list">
+							<li class="menu-top__item"><span class="menu-top__link active">О нас</span></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Гарантия</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Реквизиты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Доставка</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Обмен и возврат</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Дизайнерские решения</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Архитекторам и дизайнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__body body-header">
+		<div class="body-header__content container">
+			<div class="body-header__column logo-header">
+				<a class="logo-header__link" href="/">
+					<img class="logo-header__icon" src="/img/logo.png" alt="Логотип в шапке">
+				</a>
+			</div>
+			<div class="body-header__column">
+				<div class="body-header__info info-header">
+					<div class="info-header__column info-header__column--location">
+						<div class="info-header__location">
+							<svg class="info-header__location-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#location"></use>
+							</svg>
+							<span>Бизнес-центр «Тушино»</span>
+						</div>
+						<p class="info-header__address">Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж</p>
+					</div>
+					<div class="info-header__column">
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+							</svg>
+						</a>
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#watsapp"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="info-header__column info-header__column--phone">
+						<div class="info-header__phone">
+							<a class="info-header__phone-link" href="tel:84951234567" >8 (495) 123-45-67</a>
+							<span>Москва&nbsp;и&nbsp;МО</span>
+						</div>
+						<div class="info-header__phone">
+							<a class="info-header__phone-link" href="tel:88001234567" >8 (800) 123-45-67</a>
+							<span>Бесплатно&nbsp;по&nbsp;России</span>
+						</div>
+						<a class="info-header__callback" href="#">
+							Заказать&nbsp;звонок
+							<svg class="info-header__callback-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="body-header__column">
+				<div class="body-header__links links-header">
+					<a class="links-header__item header-search-btn" href="#" id="header-search-btn">
+						<svg class="links-header__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+						<div class="links-header__title">Поиск</div> 
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#favorites"></use>
+							</svg>
+							<span>99</span>
+						</div>
+
+						<div class="links-header__title">Избранное</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+							</svg>
+							<span>1</span>
+						</div>
+
+						<div class="links-header__title">Сравнить</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#cart"></use>
+							</svg>
+							<span>5</span>
+						</div>
+
+						<div class="links-header__title">Корзина</div> 						
+						<div class="links-header__amount">999&nbsp;000&nbsp;₽</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="body-header__search container" style="display:none;">
+			<div class="header-search">
+				<form>
+					<div class="header-search__input-wrap">
+						<input class="header-search__input" name="text" type="text" placeholder="Поиск по товарам" autocomplete="off"/>
+					</div>
+					<button class="header-search__btn"> 
+						<svg class="header-search__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__content container">
+			<button class="bottom-header__catalog" type="button">
+				<svg class="bottom-header__catalog-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#catalog"></use>
+				</svg>
+				Каталог
+			</button>
+			<div class="bottom-header__body">
+				<nav class="bottom-header__nav">
+					<ul class="bottom-header__list">
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">
+							<svg class="bottom-header__link-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#smart-house"></use>
+							</svg> Умный дом</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Освещение для дома</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Уличное освещение</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Розетки и выключатели</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Электротовары</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="bottom-header__more-link">
+					Ещё
+					<svg class="bottom-header__more-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#vertical-more"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="bottom-header__important">
+				<svg class="bottom-header__important-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#stop"></use>
+				</svg>
+				Остерегайтесь подделок
+			</div>
+		</div>
+	</div>
+</header>
+
+
+            <main class="page">
+                <div class="container">
+                    
+                </div>
+            </main>
+            <footer class="footer">
+	<div class="footer__container">
+		ФУТЕР
+	</div>
+</footer>
+
+<script src="js/app.js"></script> 
+        </div>   
+    </body>
+</html>
