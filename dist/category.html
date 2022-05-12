@@ -20,7 +20,7 @@
 	<div class="header__top top-header">
 		<div class="top-header__content container">
 			<div class="top-header__column">
-				<a class="top-header__location" href="#">
+				<a class="top-header__location" href="#"  data-da=".catalog-header__for-mb-menu,991,5">
 					Санкт-Петербург
 					<svg class="top-header__location-icon icon-svg">
 						<use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
@@ -28,7 +28,7 @@
 				</a>
 			</div>
 			<div class="top-header__column">
-				<div class="top-header__menu menu-top">
+				<div class="top-header__menu menu-top"  data-da=".catalog-header__for-mb-menu,991,10">
 					<!-- <button type="button" class="menu__icon icon-menu" id="navToggle"><span></span></button> -->
 					<nav class="menu-top__body">
 						<ul class="menu-top__list">
@@ -51,10 +51,10 @@
 		<div class="body-header__content container">
 			<div class="body-header__column logo-header">
 				<a class="logo-header__link" href="/">
-					<img class="logo-header__icon" src="/img/logo.png" alt="Логотип в шапке">
+					<img class="logo-header__icon" src="img/logo.png" alt="Логотип в шапке">
 				</a>
 			</div>
-			<div class="body-header__column">
+			<div class="body-header__column body-header__column--info body-header__column--info--js">
 				<div class="body-header__info info-header">
 					<div class="info-header__column info-header__column--location">
 						<div class="info-header__location">
@@ -65,7 +65,7 @@
 						</div>
 						<p class="info-header__address">Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж</p>
 					</div>
-					<div class="info-header__column">
+					<div class="info-header__column info-header__column--messenger">
 						<a href="#" class="info-header__messenger">
 							<svg class="info-header__messenger-icon icon-svg">
 								<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
@@ -77,6 +77,7 @@
 							</svg>
 						</a>
 					</div>
+					
 					<div class="info-header__column info-header__column--phone">
 						<div class="info-header__phone">
 							<a class="info-header__phone-link" href="tel:84951234567" >8 (495) 123-45-67</a>
@@ -95,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="body-header__column">
+			<div class="body-header__column body-header__column--links">
 				<div class="body-header__links links-header">
 					<a class="links-header__item header-search-btn" href="#" id="header-search-btn">
 						<svg class="links-header__icon icon-svg">
@@ -137,6 +138,13 @@
 				</div>
 
 			</div>
+			<div class="body-header__column body-header__column--phone-mobile">
+				<button class="body-header__phone-btn mob-phone-js" role="button">
+					<svg class="body-header__phone-btn-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+					</svg>
+				</button>
+			</div>
 		</div>
 		<div class="body-header__search container" style="display:none;">
 			<div class="header-search">
@@ -156,14 +164,16 @@
 
 	<div class="header__bottom bottom-header">
 		<div class="bottom-header__content container">
-			<button class="bottom-header__catalog" type="button">
-				<svg class="bottom-header__catalog-icon icon-svg">
-					<use xlink:href="img/icons/sprite-icons.svg#catalog"></use>
-				</svg>
-				Каталог
-			</button>
-			<div class="bottom-header__body">
-				<nav class="bottom-header__nav">
+			<div class="bottom-header__catalog" data-da=".body-header__content,991,3">
+				<button class="bottom-header__catalog-btn catalog-btn-js" type="button" >
+					<svg class="bottom-header__catalog-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#catalog"></use>
+					</svg>
+					Каталог
+				</button>
+			</div>
+			<div class="bottom-header__body" data-da=".catalog-header__for-mb-menu,991,first">
+				<nav class="bottom-header__nav" >
 					<ul class="bottom-header__list">
 						<li class="bottom-header__item"><a href="#" class="bottom-header__link">
 							<svg class="bottom-header__link-icon icon-svg">
@@ -189,6 +199,193 @@
 				Остерегайтесь подделок
 			</div>
 		</div>
+	</div>
+
+	<div class="header__catalog catalog-header container">		
+		<div class="catalog-header__content" style="display: none;">
+			<button class="catalog-header__close-btn catalog-header__close-btn--js" role="button">
+				<svg class="catalog-header__close-btn-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="catalog-header__row">
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-1"></use>
+						</svg>
+						<span>Люстры</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-2"></use>
+						</svg>
+						<span>Потолочные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-3"></use>
+						</svg>
+						<span>Подвесные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-4"></use>
+						</svg>
+						<span>Трековые светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-5"></use>
+						</svg>
+						<span>Настенные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-6"></use>
+						</svg>
+						<span>Настольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-7"></use>
+						</svg>
+						<span>Напольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-8"></use>
+						</svg>
+						<span>Линейные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-9"></use>
+						</svg>
+						<span>Уличное освещение</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="catalog-header__for-mb-menu"></div>
+
+		</div>
+
 	</div>
 </header>
 
@@ -402,11 +599,12 @@
                 </div>
             </main>
             <footer class="footer">
-	<div class="footer__container">
+	<div class="footer__container container">
 		ФУТЕР
 	</div>
 </footer>
 
+<script src="js/dynamic_adapt.js"></script> 
 <script src="js/app.js"></script> 
         </div>     
     </body>
