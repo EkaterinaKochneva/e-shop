@@ -154,6 +154,8 @@ da.init();
 
 window.onload = function () {
 
+	// Кнопки в шапке
+
 	$(".header-search-btn").click(function (e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
@@ -177,6 +179,22 @@ window.onload = function () {
 		$(".catalog-header__content").slideToggle();
 	});
 
+	// Слайдеры
+
+	const swiper = new Swiper('.top-slider__swiper', {
+		loop: true,
+
+
+		autoplay: {
+			delay: 5000,
+		  },
+
+		pagination: {
+		  el: '.swiper-pagination',
+		  clickable: true,
+		},
+		slidesPerView: 'auto',
+	  });
 
 
 // Фильтр категории
