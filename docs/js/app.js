@@ -29,14 +29,12 @@ window.onload = function () {
 
 	const swiper = new Swiper('.top-slider__swiper', {
 		loop: true,
-
-
 		autoplay: {
 			delay: 5000,
 		  },
 
 		pagination: {
-		  el: '.swiper-pagination',
+		  el: '.top-slider__pagination',
 		  clickable: true,
 		},
 		slidesPerView: 1,
@@ -79,6 +77,38 @@ window.onload = function () {
 
 	  });
 
+	  const swiperExpertHelp = new Swiper('.expert-help__swiper', {
+
+		slidesPerView: 1,
+
+		pagination: {
+		  el: '.expert-help__pagination',
+		  clickable: true,
+		},
+
+	  });
+
+
+// Аккардион FAQ
+
+
+	//   $('.faq__btn').click(function () {
+	// 	$(this).toggleClass("active");
+	// 	$(this).parent().next().slideToggle();
+	// });
+
+		$('.faq__btn').click(function(){
+			if(!$(this).hasClass('active')){	
+				$(this).parents('.faq__wrapper').find('.faq__btn').removeClass('active'); 
+				$(this).parents('.faq__wrapper').find('.faq__answer').slideUp(); 
+				$(this).addClass('active');	
+				$(this).parent().next().slideDown();	
+			} else {	
+				$(this).removeClass('active');
+				$(this).parent().next().slideUp();
+			}
+		});
+	
 
 // Фильтр категории
 
