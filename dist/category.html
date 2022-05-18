@@ -83,17 +83,17 @@
 					</div>
 					
 					<div class="info-header__column info-header__column--phone">
-						<div class="info-header__phone">
-							<a class="info-header__phone-link" href="tel:84951234567" >8 (495) 123-45-67</a>
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
 							<span>Москва&nbsp;и&nbsp;МО</span>
 						</div>
-						<div class="info-header__phone">
-							<a class="info-header__phone-link" href="tel:88001234567" >8 (800) 123-45-67</a>
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
 							<span>Бесплатно&nbsp;по&nbsp;России</span>
 						</div>
-						<a class="info-header__callback" href="#">
+						<a class="info-header__callback callback-link" href="#">
 							Заказать&nbsp;звонок
-							<svg class="info-header__callback-icon icon-svg">
+							<svg class="callback-link__icon info-header__callback-icon icon-svg">
 								<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
 							</svg>
 						</a>
@@ -603,8 +603,184 @@
                 </div>
             </main>
             <footer class="footer">
-	<div class="footer__container container">
-		ФУТЕР
+	<div class="footer__top top-footer">
+		<div class="container">
+			<form class="top-footer__form subscribe-form" action="" >
+				<div class="subscribe-form__title">
+					Подпишитесь на рассылку, чтобы узнавать об акциях первым!
+				</div>
+				<div class="subscribe-form__input-wrap">
+					<input class="subscribe-form__input main-input" name="email" type="email" placeholder="Email" required>
+					<button class="subscribe-form__btn main-button" type="submit">
+						<svg class="main-button__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#subscribe"></use>
+						</svg>
+						Подписаться</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer__body">
+		<div class="body-footer  container">
+			<div class="body-footer__col footer-info">
+				<div class="body-header__column logo-header">
+					
+				</div>
+				<div class="body-footer__logo logo-footer">
+					<a class="logo-footer__link" href="/">
+						<img src="img/logo-white.png" alt="Логотип в футере">
+					</a>					
+				</div>
+				<div class="footer-info__messenger">
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+						</svg>
+					</a>
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#watsapp"></use>
+						</svg>
+					</a>	
+				</div>
+				<div class="footer-info__phones phones-footer">
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+						<span>Москва и МО</span>
+					</div>
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+						<span>Бесплатно по России</span>
+					</div>
+					<a class="phones-footer__callback callback-link" href="#">
+						Заказать&nbsp;звонок
+						<svg class="callback-link__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+						</svg>
+					</a>
+					<div class="phones-footer__time text-footer">
+						Ежедневно, с&nbsp;09:00 до&nbsp;21:00
+					</div>
+				</div>
+				<div class="footer-info__location">
+					<div class="footer-info__location-title">
+						Бизнес-центр «Тушино»
+					</div>
+					<div class="footer-info__location-text text-footer">
+						Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж
+					</div>			
+				</div>
+				<div class="footer-info__copyright text-footer" data-da=".footer-menu__copy-for-mobile,991,last">
+					Копирайт: 2020 — 2022г. «Интернет-магазин» товаров для Умного дома» ©
+				</div>
+				<a class="footer-info__politics politics-link" href="#" data-da=".footer-menu__copy-for-mobile,991,first">
+					Политика конфиденциальности
+					<svg class="politics-link__icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#dotted-2"></use>
+					</svg>
+
+				</a>
+	
+			</div>
+			<div class="body-footer__col footer-menu">
+				<div class="footer-menu__wrap">
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Каталог
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Умный дом</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Освещение для дома</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Уличное освещение</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Розетки и выключатели</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Электротовары</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Посуда и принадлежности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Помощь покупателю
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Главная</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Оплата и доставка</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Акции</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							О компании
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >О компании</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Контакты</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Дизайнерам</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer-menu__links-wrap">
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Давайте дружить
+						</div>
+						<div class="links-block__icons">
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#vk"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#watsapp"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#yandex-market"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Принимаем к оплате
+						</div>
+						<div class="links-block__icons">
+							<img class="links-block__img" src="img/pay/visa.svg" alt="Виза">
+							<img class="links-block__img" src="img/pay/mastercard.svg" alt="Mastercard">
+							<img class="links-block__img" src="img/pay/maestro.svg" alt="Maestro">
+							<img class="links-block__img" src="img/pay/mir.svg" alt="Мир">
+							<img class="links-block__img" src="img/pay/yandex.svg" alt="Яндекс">
+							<img class="links-block__img" src="img/pay/webmoney.svg" alt="Webmoney">
+							<img class="links-block__img" src="img/pay/qiwi.svg" alt="Виза">
+						</div>
+					</div>
+				</div>				
+				<div class="footer-menu__copy-for-mobile"></div>
+			</div>
+		</div>
+
 	</div>
 </footer>
 
