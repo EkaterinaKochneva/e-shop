@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/>
+
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> -->
+
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__content container">
+			<div class="top-header__column">
+				<a class="top-header__location" href="#"  data-da=".catalog-header__for-mb-menu,991,5">
+					Санкт-Петербург
+					<svg class="top-header__location-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__menu menu-top"  data-da=".catalog-header__for-mb-menu,991,10">
+					<!-- <button type="button" class="menu__icon icon-menu" id="navToggle"><span></span></button> -->
+					<nav class="menu-top__body">
+						<ul class="menu-top__list">
+							<li class="menu-top__item"><span class="menu-top__link active">О нас</span></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Гарантия</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Реквизиты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Доставка</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Обмен и возврат</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Дизайнерские решения</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Архитекторам и дизайнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__body body-header">
+		<div class="body-header__content container">
+			<div class="body-header__column logo-header">
+				<a class="logo-header__link" href="/">
+					<img class="logo-header__icon" src="img/logo.png" alt="Логотип в шапке">
+				</a>
+			</div>
+			<div class="body-header__column body-header__column--info body-header__column--info--js">
+				<div class="body-header__info info-header">
+					<div class="info-header__column info-header__column--location">
+						<div class="info-header__location">
+							<svg class="info-header__location-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#location"></use>
+							</svg>
+							<span>Бизнес-центр «Тушино»</span>
+						</div>
+						<p class="info-header__address">Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж</p>
+					</div>
+					<div class="info-header__column info-header__column--messenger">
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+							</svg>
+						</a>
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</div>
+					
+					<div class="info-header__column info-header__column--phone">
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+							<span>Москва&nbsp;и&nbsp;МО</span>
+						</div>
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+							<span>Бесплатно&nbsp;по&nbsp;России</span>
+						</div>
+						<a class="info-header__callback callback-link" href="#">
+							Заказать&nbsp;звонок
+							<svg class="callback-link__icon info-header__callback-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="body-header__column body-header__column--links">
+				<div class="body-header__links links-header">
+					<a class="links-header__item header-search-btn" href="#" id="header-search-btn">
+						<svg class="links-header__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+						<div class="links-header__title">Поиск</div> 
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#favorites"></use>
+							</svg>
+							<span>99</span>
+						</div>
+
+						<div class="links-header__title">Избранное</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+							</svg>
+							<span>1</span>
+						</div>
+
+						<div class="links-header__title">Сравнить</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#cart"></use>
+							</svg>
+							<span>5</span>
+						</div>
+
+						<div class="links-header__title">Корзина</div> 						
+						<div class="links-header__amount">999&nbsp;000&nbsp;₽</div>
+					</a>
+				</div>
+
+			</div>
+			<div class="body-header__column body-header__column--phone-mobile">
+				<button class="body-header__phone-btn mob-phone-js" role="button">
+					<svg class="body-header__phone-btn-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="body-header__search container" style="display:none;">
+			<div class="header-search">
+				<form>
+					<div class="header-search__input-wrap">
+						<input class="header-search__input" name="text" type="text" placeholder="Поиск по товарам" autocomplete="off"/>
+					</div>
+					<button class="header-search__btn"> 
+						<svg class="header-search__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__content container">
+			<div class="bottom-header__catalog" data-da=".body-header__content,991,3">
+				<button class="bottom-header__catalog-btn catalog-btn-js" type="button" >
+					<svg class="bottom-header__catalog-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#catalog"></use>
+					</svg>
+					Каталог
+				</button>
+			</div>
+			<div class="bottom-header__body" data-da=".catalog-header__for-mb-menu,991,first">
+				<nav class="bottom-header__nav" >
+					<ul class="bottom-header__list">
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">
+							<svg class="bottom-header__link-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#smart-house"></use>
+							</svg> Умный дом</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Освещение для дома</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Уличное освещение</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Розетки и выключатели</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Электротовары</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="bottom-header__more-link">
+					Ещё
+					<svg class="bottom-header__more-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#vertical-more"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="bottom-header__important">
+				<svg class="bottom-header__important-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#stop"></use>
+				</svg>
+				Остерегайтесь подделок
+			</div>
+		</div>
+	</div>
+
+	<div class="header__catalog catalog-header container">		
+		<div class="catalog-header__content" style="display: none;">
+			<button class="catalog-header__close-btn catalog-header__close-btn--js" role="button">
+				<svg class="catalog-header__close-btn-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="catalog-header__row">
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-1"></use>
+						</svg>
+						<span>Люстры</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-2"></use>
+						</svg>
+						<span>Потолочные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-3"></use>
+						</svg>
+						<span>Подвесные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-4"></use>
+						</svg>
+						<span>Трековые светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-5"></use>
+						</svg>
+						<span>Настенные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-6"></use>
+						</svg>
+						<span>Настольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-7"></use>
+						</svg>
+						<span>Напольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-8"></use>
+						</svg>
+						<span>Линейные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-9"></use>
+						</svg>
+						<span>Уличное освещение</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="catalog-header__for-mb-menu"></div>
+
+		</div>
+
+	</div>
+</header>
+
+
+            <main class="page contacts-page">
+                <div class="container">
+                    <div class="page__row">
+                        <aside class="page__sidebar sidebar">
+                            <nav class="sidebar__menu menu-sidebar">
+                                <ul class="menu-sidebar__list">
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Оплата и доставка</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Установка</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Гарантии</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <span class="menu-sidebar__link active">Контакты</span>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">О компании</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Дизайнерам</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <div class="page__body">
+                            <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                                <ol class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="/">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <span>Контакты</span>
+                                    </li>                                    
+                                </ol>                                
+                            </nav>
+                            <div class="page__head">
+                                <h1>Контакты</h1>
+                            </div>
+                            <div class="tabs">
+                                <div class="tabs__caption">
+                                    <button class="tabs__btn active" role="button">Контакты</button>
+                                    <button class="tabs__btn" role="button">Реквизиты</button>
+                                </div>
+                                <div class="tabs__wrap">
+                                    <div class="tabs__content active">
+                                        <div class="contacts__row">
+                                            <div class="contacts__col contacts__col--info">
+                                                <div class="contacts-info">
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            <svg class="contacts-info__title-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#phone-2"></use>
+                                                            </svg>
+                                                            Телефоны
+                                                        </div>
+                                                        <div class="contacts-info__messengers">
+                                                            <a class="contacts-info__messenger contacts-info__messenger--telegramm" href="#">
+                                                                <svg class="contacts-info__messenger-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <a class="contacts-info__messenger contacts-info__messenger--whatsapp" href="#">
+                                                                <svg class="contacts-info__messenger-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                                                </svg>
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="contacts-info__phones phones-contacts">
+                                                            <div class="phones-contacts__item phone-item">
+                                                                <a class="contacts-info__text phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+                                                                <span>Москва и МО</span>
+                                                            </div>
+                                                            <div class="phones-contacts__item phone-item">
+                                                                <a class="contacts-info__text phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+                                                                <span>Бесплатно по России</span>
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            <svg class="contacts-info__title-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#email"></use>
+                                                            </svg>
+                                                            Email
+                                                        </div>
+                                                        <div class="contacts-info__phones phones-contacts">
+                                                            <div class="phones-contacts__item phone-item">
+                                                                <a class="contacts-info__text phone-item__link" href="mailto:email@shop.com" >email@shop.com</a>
+                                                                <span>Заказы</span>
+                                                            </div>
+                                                            <div class="phones-contacts__item phone-item">
+                                                                <a class="contacts-info__text phone-item__link" href="mailto:email@shop.com" >email@shop.com</a>
+                                                                <span>Оптовый отдел</span>
+                                                            </div>
+                                                            <div class="phones-contacts__item phone-item">
+                                                                <a class="contacts-info__text phone-item__link" href="mailto:email@shop.com" >email@shop.com</a>
+                                                                <span>Рекламации (брак, некомплект)</span>
+                                                            </div>                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            <svg class="contacts-info__title-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#time"></use>
+                                                            </svg>
+                                                            Самовывоз
+                                                        </div>
+                                                        <div class="contacts-info__text">с 9:00 до 18:00 (ежедневно)
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            <svg class="contacts-info__title-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                                                            </svg>
+                                                            Адрес склада
+                                                        </div>
+                                                        <div class="contacts-info__text">Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            <svg class="contacts-info__title-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#route"></use>
+                                                            </svg>
+                                                            Координаты для навигатора
+                                                        </div>
+                                                        <div class="contacts-info__text">55.487767, 37.594851 
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="contacts__col contacts__col--img">
+                                                <div class="contacts__map">
+                                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acd67567ac1c29d0f89575f7eac43ea38fcac3ef1bd64e4ad270bd28eda36df7b&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="like-h1-title contacts__like-h1-title ">
+                                            Как добраться
+                                        </div>                                        
+                                        <div class="page__text">
+                                            <div class="text__subtitle">
+                                                При движении на автомобиле:
+                                            </div>
+                                            <p>Походный проезд, д. 4, корп. 1, 4-й этаж, офис 412. С Волоколамского шоссе поворот на Походный проезд (повернуть можно как при движении из центра (направо по стрелке, так и при движении в центр от МКАДА первый светофор, налево на стрелку). Далее, по Походному проезду, проезжаем круговое движение и не доезжая 50 метров до светофора (пешеходный переход), поворот направо, далее через шлагбаум, проезд в конец здания на гостевую парковку. Вход в бизнес центр Тушино. Убедительно просим заранее звонить, для заказа пропуска на автомобиль!</p>                                            
+                                            <div class="text__subtitle">
+                                                При движении пешком:
+                                            </div>
+                                            <p>Походный проезд, д. 4, корп. 1, 4-й этаж, офис 412. Станция МЦД 2 (Трикотажная), выходим на Трикотажный проезд и следуем до Походного проезда в сторону налоговой, через 100 метров после кругового движения, по Походному проезду, не доходя 50 метров до светофора (пешеходный переход), поворот направо, далее через шлагбаум. Вход в бизнес центр Тушино. Убедительно просим заранее звонить, для заказа пропуска!</p>
+                                            <div class="contacts__photo gallery">
+                                                <div class="gallery__wrapper">
+                                                    <div class="gallery__item">
+                                                        <picture>
+                                                            <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                                            <img class="gallery__img" src="img/contacts/contacts-1.jpg" alt="Фото магазина">
+                                                        </picture>
+                                                    </div>                                                    
+                                                    <div class="gallery__item">
+                                                        <picture>
+                                                            <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                                            <img class="gallery__img" src="img/contacts/contacts-2.jpg" alt="Фото магазина 2">
+                                                        </picture>
+                                                    </div>                                                    
+                                                    <div class="gallery__item">
+                                                        <picture>
+                                                            <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                                            <img class="gallery__img" src="img/contacts/contacts-3.jpg" alt="Фото магазина 3">
+                                                        </picture>
+                                                    </div>                                                    
+                                                    <div class="gallery__item">
+                                                        <picture>
+                                                            <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                                            <img class="gallery__img" src="img/contacts/contacts-4.jpg" alt="Фото магазина 4">
+                                                        </picture>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                            <div class="text__subtitle">
+                                                При движении на маршрутке:
+                                            </div>
+                                            <p>Походный проезд, д. 4, корп. 1, 4-й этаж, офис 412. Станция метро Сходненская, последний вагон из центра, из стеклянных дверей метро направо, маршрутное такси № 368; Остановка возле налоговой. Напротив, через дорогу наше офисное здание. Далее через шлагбаум. Вход в бизнес центр Тушино. Убедительно просим заранее звонить, для заказа пропуска!</p>
+                                            <div class="contacts__wide-map wide-map">
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acd67567ac1c29d0f89575f7eac43ea38fcac3ef1bd64e4ad270bd28eda36df7b&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tabs__content">
+                                        <div class="contacts__row">
+                                            <div class="contacts__col contacts__col--info">
+                                                <div class="contacts-info">
+                                                    <div class="contacts-info__item">
+                                                        <div class="contacts-info__title">
+                                                            ООО Название магазина
+                                                        </div>
+                                                        <div class="contacts-info__requisites requisites">
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    1295876397
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    ИНН
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    780401001
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    КПП
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    1167837327856
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    ОГРН
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    40702810455080001346
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    Расчетный счет
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    ПАО СБЕРБАНК
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    Название банка
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    044030653
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    БИК
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    40702810455080001346
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    Корреспондентский счет
+                                                                </div>
+                                                            </div>
+                                                            <div class="requisites__row">
+                                                                <div class="requisites__col requisites__col--val">
+                                                                    Голицын Иван Юрьевич
+                                                                </div>
+                                                                <div class="requisites__col requisites__col--key">
+                                                                    Генеральный директор
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="contacts-info__bank">
+                                                        <img src="img/contacts/alfa-bank.svg" alt="Логотип Альфа">
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            <div class="contacts__col contacts__col--img">
+                                                <div class="gallery__item contacts-info__gallery__item">
+                                                    <picture>
+                                                        <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                                        <img class="gallery__img" src="img/contacts/biznes-centr.jpg" alt="Фото Бизнес-центра">
+                                                    </picture>
+                                                </div>  
+                                            </div>
+
+                                        </div>
+                                    </div> 
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div><!-- /container -->  
+
+                
+            </main>
+            <footer class="footer">
+	<div class="button-up"></div>
+	<div class="footer__top top-footer">
+		<div class="container">
+			<form class="top-footer__form subscribe-form" action="" >
+				<div class="subscribe-form__title">
+					Подпишитесь на рассылку, чтобы узнавать об акциях первым!
+				</div>
+				<div class="subscribe-form__input-wrap">
+					<input class="subscribe-form__input main-input" name="email" type="email" placeholder="Email" required>
+					<button class="subscribe-form__btn main-button" type="submit">
+						<svg class="main-button__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#subscribe"></use>
+						</svg>
+						Подписаться</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer__body">
+		<div class="body-footer  container">
+			<div class="body-footer__col footer-info">
+				<div class="body-header__column logo-header">
+					
+				</div>
+				<div class="body-footer__logo logo-footer">
+					<a class="logo-footer__link" href="/">
+						<img src="img/logo-white.png" alt="Логотип в футере">
+					</a>					
+				</div>
+				<div class="footer-info__messenger">
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+						</svg>
+					</a>
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+						</svg>
+					</a>	
+				</div>
+				<div class="footer-info__phones phones-footer">
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+						<span>Москва и МО</span>
+					</div>
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+						<span>Бесплатно по России</span>
+					</div>
+					<a class="phones-footer__callback callback-link" href="#">
+						Заказать&nbsp;звонок
+						<svg class="callback-link__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+						</svg>
+					</a>
+					<div class="phones-footer__time text-footer">
+						Ежедневно, с&nbsp;09:00 до&nbsp;21:00
+					</div>
+				</div>
+				<div class="footer-info__location">
+					<div class="footer-info__location-title">
+						Бизнес-центр «Тушино»
+					</div>
+					<div class="footer-info__location-text text-footer">
+						Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж
+					</div>			
+				</div>
+				<div class="footer-info__copyright text-footer" data-da=".footer-menu__copy-for-mobile,991,last">
+					Копирайт: 2020 — 2022г. «Интернет-магазин» товаров для Умного дома» ©
+				</div>
+				<a class="footer-info__politics politics-link" href="#" data-da=".footer-menu__copy-for-mobile,991,first">
+					Политика конфиденциальности
+					<svg class="politics-link__icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#dotted-2"></use>
+					</svg>
+
+				</a>
+	
+			</div>
+			<div class="body-footer__col footer-menu">
+				<div class="footer-menu__wrap">
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Каталог
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Умный дом</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Освещение для дома</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Уличное освещение</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Розетки и выключатели</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Электротовары</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Посуда и принадлежности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Помощь покупателю
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Главная</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Оплата и доставка</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Акции</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							О компании
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >О компании</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Контакты</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Дизайнерам</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer-menu__links-wrap">
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Давайте дружить
+						</div>
+						<div class="links-block__icons">
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#vk"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#yandex-market"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Принимаем к оплате
+						</div>
+						<div class="links-block__icons">
+							<img class="links-block__img" src="img/pay/visa.svg" alt="Виза">
+							<img class="links-block__img" src="img/pay/mastercard.svg" alt="Mastercard">
+							<img class="links-block__img" src="img/pay/maestro.svg" alt="Maestro">
+							<img class="links-block__img" src="img/pay/mir.svg" alt="Мир">
+							<img class="links-block__img" src="img/pay/yandex.svg" alt="Яндекс">
+							<img class="links-block__img" src="img/pay/webmoney.svg" alt="Webmoney">
+							<img class="links-block__img" src="img/pay/qiwi.svg" alt="Виза">
+						</div>
+					</div>
+				</div>				
+				<div class="footer-menu__copy-for-mobile"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+</footer>
+
+
+<script src="files/libs/jquery.min.js"></script>
+
+<script src="files/libs/dynamic_adapt.js"></script>
+
+<script src="files/libs/swiper-bundle.min.js"></script>
+<script src="files/libs/ion.rangeSlider.min.js"></script>
+
+
+<script src="js/app.js"></script> 
+        </div>   
+    </body>
+</html>

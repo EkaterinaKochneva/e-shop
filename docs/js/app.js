@@ -91,12 +91,6 @@ window.onload = function () {
 
 // Аккардион FAQ
 
-
-	//   $('.faq__btn').click(function () {
-	// 	$(this).toggleClass("active");
-	// 	$(this).parent().next().slideToggle();
-	// });
-
 		$('.faq__btn').click(function(){
 			if(!$(this).hasClass('active')){	
 				$(this).parents('.faq__wrapper').find('.faq__btn').removeClass('active'); 
@@ -108,7 +102,17 @@ window.onload = function () {
 				$(this).parent().next().slideUp();
 			}
 		});
-	
+
+
+// Tabs
+
+		$('.tabs__caption').on('click', '.tabs__btn:not(.active)', function (e) {
+			$(this)
+				.addClass('active').siblings().removeClass('active')
+				.closest('.tabs').find('.tabs__content').hide().removeClass('active')
+				.eq($(this).index()).fadeIn().addClass('active');
+
+		});
 
 // Фильтр категории
 
@@ -188,3 +192,18 @@ window.onload = function () {
 	});
 
 }
+
+// Прокрутка наверх страницы
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 100) {
+    $('.button-up').addClass('scroll');
+    } else {
+    $('.button-up').removeClass('scroll');
+    }
+    });
+    $('.button-up').click(function(){
+    $('body,html').animate({
+    scrollTop: 0
+    }, 500);
+    return false;
+});
