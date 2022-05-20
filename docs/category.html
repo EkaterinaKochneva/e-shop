@@ -38,7 +38,7 @@
 						<ul class="menu-top__list">
 							<li class="menu-top__item"><span class="menu-top__link active">О нас</span></li>
 							<li class="menu-top__item"><a href="#" class="menu-top__link">Гарантия</a></li>
-							<li class="menu-top__item"><a href="#" class="menu-top__link">Контакты</a></li>
+							<li class="menu-top__item"><a href="/kontakty.html" class="menu-top__link">Контакты</a></li>
 							<li class="menu-top__item"><a href="#" class="menu-top__link">Реквизиты</a></li>
 							<li class="menu-top__item"><a href="#" class="menu-top__link">Доставка</a></li>
 							<li class="menu-top__item"><a href="#" class="menu-top__link">Обмен и возврат</a></li>
@@ -394,213 +394,562 @@
 </header>
 
 
-            <main class="page">
+            <main class="page category">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-2">
-                            <aside class="category-sidebar">
-                                <form class="category-sidebar__filter category-filter">
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title active" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                    <div class="page__row">
+                        <aside class="page__sidebar sidebar">
+                            <form class="sidebar__filter category-filter">
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title active" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Цена
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body">
+                                        <div class="category-filter__price filter-price range-wrap">
+                                            <div class="filter-price__values">													
+                                                <div class="filter-price__value">
+                                                    <input class="filter-price__input input_from " type="text" value=""/>
+                                                </div>                                                
+                                                <div class="filter-price__value">
+                                                    <input class="filter-price__input input_to " type="text" value=""/>
+                                                </div>													
+                                            </div>
+                                            <input class="range-slider-js" type="text" data-min="190" data-max="360000"/>
+                                        </div>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title active" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Бренд
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="Eurosvet" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">Eurosvet</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="Bogate's" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">Bogate's</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="TK Lighting" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">TK Lighting</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="Elektrostandard" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">Elektrostandard</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title active" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Источник света
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="сменная лампа" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">сменная лампа</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="встроенные LED" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">встроенные LED</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title active" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Количество ламп 
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body">
+                                        <div class="category-filter__price filter-price range-wrap">
+                                            <div class="filter-price__values">													
+                                                <div class="filter-price__value">
+                                                    <input class="filter-price__input input_from " type="text" value=""/>
+                                                </div>                                                
+                                                <div class="filter-price__value">
+                                                    <input class="filter-price__input input_to " type="text" value=""/>
+                                                </div>													
+                                            </div>
+                                            <input class="range-slider-js" type="text" data-min="1" data-max="48"/>
+                                        </div>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Лампы в комплекте
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body" style="display: none;">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">1</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">2</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">3</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Стиль
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body" style="display: none;">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">1</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">2</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">3</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Цоколь
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body" style="display: none;">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">1</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">2</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">3</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                                <fieldset class="category-filter__item">
+                                    <legend>
+                                        <button class="category-filter__title" type="button">
+                                            <svg class="icon-svg category-filter__icon" >
+                                                <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                            </svg>
+                                            Размер
+                                        </button>                                            
+                                    </legend>
+                                    <div class="category-filter__body" style="display: none;">
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">1</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">2</span>
+                                        </label>
+                                        <label class="category-filter__input custom-checkbox">
+                                            <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
+                                            <span class="custom-checkbox__text form-check-label">3</span>
+                                        </label>
+                                    </div>    
+                                </fieldset>
+                            </form>
+                            <div class="sidebar__consultant consultant-block">
+                                <div class="consultant-block__name">
+                                    Антонина Игоревна
+                                </div>
+                                <div class="consultant-block__position">
+                                    Консультант
+                                </div>
+                                <div class="consultant-block__avatar">
+                                    <picture>
+                                        <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                        <img class="consultant-block__img" src="img/consultant.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <button class="consultant-block__button main-button" role="button">
+                                    <svg class="main-button__icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#balloon"></use>
+                                    </svg>
+                                    Задать вопрос
+                                </button>
+                            </div>
+                        </aside>
+                        <div class="page__body">
+                            <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                                <ol class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a href="/">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <span>Светильники</span>
+                                    </li>                                    
+                                </ol>                                
+                            </nav>
+                            <div class="page__head">
+                                <h1>Светильники</h1>
+                                <span class="page__head-amount">217 товаров</span>
+                            </div>
+
+                            <div class="category__tabs tabs variation-tabs">
+                                <div class="tabs__caption variation-tabs__caption">
+                                    <button class="tabs__btn variation-tabs__btn active" role="button">Тип</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Назначение</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Потолки</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Размер</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Стиль</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Цвет</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Декор</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Материал</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Страна</button>
+                                    <button class="tabs__btn variation-tabs__btn" role="button">Бренд</button>
+                                </div>
+                                <div class="tabs__wrap variation-tabs__wrap">
+                                    <div class="tabs__content active">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-1"></use>
                                                 </svg>
-                                                Цена
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body">
-                                            <div class="category-filter__price filter-price range-wrap">
-												<div class="filter-price__values">													
-                                                    <div class="filter-price__value">
-                                                        <input class="filter-price__input input_from " type="text" value=""/>
-                                                    </div>                                                
-                                                    <div class="filter-price__value">
-                                                        <input class="filter-price__input input_to " type="text" value=""/>
-                                                    </div>													
-												</div>
-												<input class="range-slider-js" type="text" data-min="190" data-max="360000"/>
-											</div>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title active" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Люстры</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-2"></use>
                                                 </svg>
-                                                Бренд
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="Eurosvet" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">Eurosvet</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="Bogate's" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">Bogate's</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="TK Lighting" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">TK Lighting</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="Elektrostandard" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">Elektrostandard</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title active" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Потолочные светильники</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-3"></use>
                                                 </svg>
-                                                Источник света
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="сменная лампа" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">сменная лампа</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="встроенные LED" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">встроенные LED</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title active" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Подвесные светильники</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-4"></use>
                                                 </svg>
-                                                Количество ламп 
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body">
-                                            <div class="category-filter__price filter-price range-wrap">
-												<div class="filter-price__values">													
-                                                    <div class="filter-price__value">
-                                                        <input class="filter-price__input input_from " type="text" value=""/>
-                                                    </div>                                                
-                                                    <div class="filter-price__value">
-                                                        <input class="filter-price__input input_to " type="text" value=""/>
-                                                    </div>													
-												</div>
-												<input class="range-slider-js" type="text" data-min="1" data-max="48"/>
-											</div>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Трековые светильники</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-5"></use>
                                                 </svg>
-                                                Лампы в комплекте
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body" style="display: none;">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">1</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">2</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">3</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Настенные светильники</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-6"></use>
                                                 </svg>
-                                                Стиль
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body" style="display: none;">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">1</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">2</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">3</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Настольная лампа</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-7"></use>
                                                 </svg>
-                                                Цоколь
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body" style="display: none;">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">1</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">2</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">3</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                    <fieldset class="category-filter__item">
-                                        <legend>
-                                            <button class="category-filter__title" type="button">
-                                                <svg class="icon-svg category-filter__icon" aria-hidden="true">
-                                                    <use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+                                                <span>Напольная лампа</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-8"></use>
                                                 </svg>
-                                                Размер
-                                            </button>                                            
-                                        </legend>
-                                        <div class="category-filter__body" style="display: none;">
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="1" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">1</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="2" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">2</span>
-                                            </label>
-                                            <label class="category-filter__input custom-checkbox">
-                                                <input class="custom-checkbox__input" value="3" name="checkbox" type="checkbox">
-                                                <span class="custom-checkbox__text form-check-label">3</span>
-                                            </label>
-                                        </div>    
-                                    </fieldset>
-                                </form>
-                                
-                            </aside>
-                        </div>
-                        <div class="col-10">
-                            <main>
-                                Содержимое
-                            </main>
+                                                <span>Линейные светильники</span>
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">
+                                                <svg class="variation-tabs__link-icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#category-9"></use>
+                                                </svg>
+                                                <span>Уличное освещение</span>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Ванная</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Дача</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Детская</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Гостинная</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Кухня</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Офис</span> 
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>2.50 м</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>2.60 м</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>2.70 м</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>2.80 м</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>2.90 м</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>3.00 м</span> 
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Маленькие</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Средние</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Большие</span> 
+                                            </a>                                                                                      
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Современный</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Классика</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Минимализм</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Модерн</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Лофт</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Хай-тек</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Белые</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бежевые</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Золотые</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Серебрянные</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Хром</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Черные</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 1</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 2</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 3</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 4</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 5</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Декор 6</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 1</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 2</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 3</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 4</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 5</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Материал 6</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 1</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 2</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 3</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 4</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 5</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Страна 6</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                    <div class="tabs__content">
+                                        <div class="variation-tabs__content">
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 1</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 2</span> 
+                                            </a>
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 3</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 4</span> 
+                                            </a>      
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 5</span> 
+                                            </a>   
+                                            <a class="variation-tabs__link" href="#">                                                
+                                                <span>Бренд 6</span> 
+                                            </a>                                                                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="category__line-filter line-filter">
+                                <fieldset class="line-filter__item">
+                                    <select class="line-filter__sort">
+                                        <option value="pop">По популярности</option>
+                                        <option value="min">Сначала недорогие</option>
+                                        <option value="max">Сначала недорогие</option>                                        
+                                    </select>
+                                    <label class="line-filter__input custom-checkbox">
+                                        <input class="custom-checkbox__input" value="Акции" name="checkbox" type="checkbox" checked>
+                                        <span class="line-filter__text">Акции</span>
+                                    </label>
+                                    <label class="line-filter__input custom-checkbox">
+                                        <input class="custom-checkbox__input" value="Скидка" name="checkbox" type="checkbox" >
+                                        <span class="line-filter__text">Скидка</span>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="line-filter__item">
+                                    <div class="line-filter__subtitle">
+                                        Показать по:
+                                    </div>
+                                    <div class="line-filter__amount-card">
+                                        <label class="line-filter__radio custom-radio">
+                                            <input class="custom-radio__input" value="36" name="amount-card" type="radio" checked >
+                                            <span class="custom-radio__text">36</span>
+                                        </label>
+                                        <label class="line-filter__radio custom-radio">
+                                            <input class="custom-radio__input" value="72" name="amount-card" type="radio" >
+                                            <span class="custom-radio__text">72</span>
+                                        </label>
+                                    </div>
+                                    <div class="line-filter__view-card">
+                                        <label class="line-filter__radio custom-radio">
+                                            <input class="custom-radio__input" value="grid-view" name="view-card" type="radio" checked >
+                                            <svg class="custom-radio__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#grid-view"></use>
+                                            </svg>                                            
+                                        </label>
+                                        <label class="line-filter__radio custom-radio">
+                                            <input class="custom-radio__input" value="row-view" name="view-card" type="radio" >
+                                            <svg class="custom-radio__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#row-view"></use>
+                                            </svg>  
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                            </form>
+
+
                         </div>
                     </div>
-                </div>
+
+                    
+
+                </div><!-- /container -->  
+
+                
             </main>
             <footer class="footer">
 	<div class="button-up"></div>
@@ -706,7 +1055,7 @@
 						</div>
 						<nav>
 							<ul class="footer-menu__list">
-								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Главная</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="/" >Главная</a></li>
 								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Оплата и доставка</a></li>
 								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Акции</a></li>
 							</ul>
@@ -719,7 +1068,7 @@
 						<nav>
 							<ul class="footer-menu__list">
 								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >О компании</a></li>
-								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Контакты</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="/kontakty.html" >Контакты</a></li>
 								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Дизайнерам</a></li>
 							</ul>
 						</nav>
@@ -797,6 +1146,6 @@
 
 
 <script src="js/app.js"></script> 
-        </div>     
+        </div>   
     </body>
 </html>
