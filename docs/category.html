@@ -143,7 +143,7 @@
 
 			</div>
 			<div class="body-header__column body-header__column--phone-mobile">
-				<button class="body-header__phone-btn mob-phone-js" role="button">
+				<button class="body-header__phone-btn mob-phone-js" type="button">
 					<svg class="body-header__phone-btn-icon icon-svg">
 						<use xlink:href="img/icons/sprite-icons.svg#phone"></use>
 					</svg>
@@ -207,7 +207,7 @@
 
 	<div class="header__catalog catalog-header container">		
 		<div class="catalog-header__content" style="display: none;">
-			<button class="catalog-header__close-btn catalog-header__close-btn--js" role="button">
+			<button class="catalog-header__close-btn catalog-header__close-btn--js" type="button">
 				<svg class="catalog-header__close-btn-icon icon-svg">
 					<use xlink:href="img/icons/sprite-icons.svg#close"></use>
 				</svg>
@@ -385,7 +385,6 @@
 					</ul>
 				</div>
 			</div>
-
 			<div class="catalog-header__for-mb-menu"></div>
 
 		</div>
@@ -398,7 +397,13 @@
                 <div class="container">
                     <div class="page__row">
                         <aside class="page__sidebar sidebar">
+                            
                             <form class="sidebar__filter category-filter">
+                                <button class="category-filter__close-btn category-filter__close-btn--js" type="button">
+                                    <svg class="category-filter__close-btn-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#close"></use>
+                                    </svg>
+                                </button>
                                 <fieldset class="category-filter__item">
                                     <legend>
                                         <button class="category-filter__title active" type="button">
@@ -590,26 +595,44 @@
                                     </div>    
                                 </fieldset>
                             </form>
-                            <div class="sidebar__consultant consultant-block">
-                                <div class="consultant-block__name">
-                                    Антонина Игоревна
+                            <div class="sidebar__bottom">
+                                <div class="sidebar__consultant consultant-block">
+                                    <div class="consultant-block__name">
+                                        Антонина Игоревна
+                                    </div>
+                                    <div class="consultant-block__position">
+                                        Консультант
+                                    </div>
+                                    <div class="consultant-block__avatar">
+                                        <picture>
+                                            <!-- <source type="image/webp" srcset="img/.webp"> -->
+                                            <img class="consultant-block__img" src="img/consultant.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <button class="consultant-block__button main-button" type="button">
+                                        <svg class="main-button__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#balloon"></use>
+                                        </svg>
+                                        Задать вопрос
+                                    </button>
                                 </div>
-                                <div class="consultant-block__position">
-                                    Консультант
+                                <div class="sidebar__banner banner">
+                                    <div class="banner__title">
+                                        <span>Оплата</span><br>
+                                        <span>в&nbsp;рассрочку</span>                              
+                                    </div>
+                                    <div class="banner__text">
+                                        <span>Забирай сейчас,</span><br>  
+                                        <span>плати потом</span>                                    
+                                    </div>
+                                    <div class="banner__bottom">
+                                        <img class="banner__logo" src="img/rassrochka-1.png" alt="Логотип Сбербанк">
+                                        <img class="banner__logo" src="img/rassrochka-2.png" alt="Логотип Тинькофф">
+                                        <img class="banner__logo" src="img/rassrochka-3.png" alt="Логотип банка">
+                                    </div>
                                 </div>
-                                <div class="consultant-block__avatar">
-                                    <picture>
-                                        <!-- <source type="image/webp" srcset="img/.webp"> -->
-                                        <img class="consultant-block__img" src="img/consultant.jpg" alt="">
-                                    </picture>
-                                </div>
-                                <button class="consultant-block__button main-button" role="button">
-                                    <svg class="main-button__icon icon-svg">
-                                        <use xlink:href="img/icons/sprite-icons.svg#balloon"></use>
-                                    </svg>
-                                    Задать вопрос
-                                </button>
                             </div>
+                            
                         </aside>
                         <div class="page__body">
                             <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
@@ -629,16 +652,16 @@
 
                             <div class="category__tabs tabs variation-tabs">
                                 <div class="tabs__caption variation-tabs__caption">
-                                    <button class="tabs__btn variation-tabs__btn active" role="button">Тип</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Назначение</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Потолки</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Размер</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Стиль</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Цвет</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Декор</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Материал</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Страна</button>
-                                    <button class="tabs__btn variation-tabs__btn" role="button">Бренд</button>
+                                    <button class="tabs__btn variation-tabs__btn active" type="button">Тип</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Назначение</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Потолки</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Размер</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Стиль</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Цвет</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Декор</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Материал</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Страна</button>
+                                    <button class="tabs__btn variation-tabs__btn" type="button">Бренд</button>
                                 </div>
                                 <div class="tabs__wrap variation-tabs__wrap">
                                     <div class="tabs__content active">
@@ -941,6 +964,659 @@
 
                             </form>
 
+                            <button class="category__filter-btn filter-btn-js" type="button">
+                                Фильтр
+                            </button>
+
+                            <div class="category__catalog products-catalog">
+                                <div class="products-catalog__wrap">
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-2.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <!-- <div class="prod-item__discount">
+                                                        -30%
+                                                    </div> -->
+                                                </div>
+                                                <div class="prod-item__price">29 900 <span>₽</span></div>
+                                                <!-- <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                               -->
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Потолочная люстра в стиле лофт</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>                                    
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-6.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">5 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Трековый светодиодный светильник для однофазно...</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-7.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">8 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Настенный светильник</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-8.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#led"></use>
+                                                            </svg>
+                                                            Светодиодный LED</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Подвесной светильник со стеклянными плафонами</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-9.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <!-- <div class="prod-item__discount">
+                                                        -30%
+                                                    </div> -->
+                                                </div>
+                                                <div class="prod-item__price">29 900 <span>₽</span></div>
+                                                <!-- <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                               -->
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Потолочная люстра в стиле лофт</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>                                    
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-3.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">5 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Трековый светодиодный светильник для однофазно...</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-5.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">8 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Настенный светильник</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-1.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#led"></use>
+                                                            </svg>
+                                                            Светодиодный LED</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Подвесной светильник со стеклянными плафонами</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-10.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <!-- <div class="prod-item__discount">
+                                                        -30%
+                                                    </div> -->
+                                                </div>
+                                                <div class="prod-item__price">29 900 <span>₽</span></div>
+                                                <!-- <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                               -->
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Потолочная люстра в стиле лофт</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>                                    
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-11.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">5 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Трековый светодиодный светильник для однофазно...</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-12.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <!-- <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#moisture-protection"></use>
+                                                            </svg>
+                                                            Влагозащита</div> -->
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">8 400 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Настенный светильник</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="products-catalog__item">
+                                        <div class="prod-item">
+                                            <div class="prod-item__body">
+                                                <div class="prod-item__picture">
+                                                    <a class="prod-item__img-wrap" href="#" >
+                                                        <picture>
+                                                            <img class="prod-item__img" src="img/tovar-13.jpg" alt="">
+                                                        </picture>                                                
+                                                    </a>
+                                                    <div class="prod-item__labels">
+                                                        <div class="prod-item__label prod-item__label--new">
+                                                            <svg class="prod-item__label-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#led"></use>
+                                                            </svg>
+                                                            Светодиодный LED</div>
+                                                    </div>
+                                                    <div class="prod-item__add-to">
+                                                        <button class="prod-item__add-to-btn add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="prod-item__add-to-btn add-to-favorite" type="button">
+                                                            <svg class="prod-item__add-to-btn-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                                            </svg>
+                                                        </button>    
+                                                    </div>
+                                                    <div class="prod-item__discount">
+                                                        -30%
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="prod-item__price">5 400 <span>₽</span></div> -->
+                                                <div class="prod-item__price prod-item__price--new">41 900 <span>₽</span></div>  
+                                                <div class="prod-item__price prod-item__price--old">60 900 <span>₽</span></div>                                              
+                                                <div class="prod-item__vendor">minimir</div>
+                                                <div class="prod-item__title">Подвесной светильник со стеклянными плафонами</div>
+                                            </div>
+        
+                                            <div class="prod-item__bottom bottom-prod">
+                                                <button class="bottom-prod__item prod-item__add-cart" type="button" type="submit">
+                                                    <svg class="prod-item__add-cart-icon icon-svg">
+                                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                                    </svg>
+                                                    В корзину
+                                                </button>
+                                                <a class="bottom-prod__item prod-item__show-link" href="#">Посмотреть</a>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="products-catalog__more-btn">
+                                    <button class="more-btn" type="button">Показать еще</button>
+                                </div>
+                                <div class="products-catalog__pagination pagination">
+                                    <ul class="pagination__list">
+                                        <li class="pagination__item current">1</li>
+                                        <li class="pagination__item">2</li>
+                                        <li class="pagination__item">3</li>
+                                        <li class="pagination__item dots">...</li>
+                                        <li class="pagination__item">411</li>
+                                    </ul>
+                                    <div class="pagination__btn">
+                                        <button class="btn-pagination" type="button">Вперед</button>
+                                    </div>
+                                </div>                                
+                            </div>
+
+                            <div class="category__content-bottom page__text">
+                                <div class="like-h1-title">
+                                    Интернет-магазин
+                                </div> 
+                                <p>Мы рады приветствовать вас на сайте нашего интернет-магазина!</p>
+                                <p>В обширном каталоге магазина - только актуальные и востребованные товары высокого качества и по оптимальным ценам. В магазине MiniMir каждый найдет светотехнику по вкусу: интерьерное и уличное освещение, лампы, электротехнику для ЖКХ, а также фонари, дверные звонки, системы «Умный дом» и многое другое.</p>
+                                <div class="text-subtitle">
+                                    Каталог товаров укомплектован качественными фотографиями
+                                </div>
+                                <p>Подробными описаниями и полными техническими характеристиками каждого продукта. Вся продукция перед реализацией проходит тщательный многоступенчатый контроль. Товары поставляются напрямую от производителя и имеют сертификаты качества и гарантии. Мы обеспечиваем полный комплекс клиентского и логистического сервиса. В магазине MiniMir каждый найдет светотехнику по вкусу: интерьерное и уличное освещение, лампы, электротехнику для ЖКХ, а также фонари, дверные звонки, системы «Умный дом» и многое другое. </p>
+
+                                <div class="text-subtitle">
+                                    Каталог товаров укомплектован качественными фотографиями
+                                </div>
+                                <p>Подробными описаниями и полными техническими характеристиками каждого продукта. Вся продукция перед реализацией проходит тщательный многоступенчатый контроль. Товары поставляются напрямую от производителя и имеют сертификаты качества и гарантии. Мы обеспечиваем полный комплекс клиентского и логистического сервиса. В магазине MiniMir каждый найдет светотехнику по вкусу: интерьерное и уличное освещение, лампы, электротехнику для ЖКХ, а также фонари, дверные звонки, системы «Умный дом» и многое другое. </p>
+                            </div>
 
                         </div>
                     </div>

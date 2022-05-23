@@ -116,6 +116,12 @@ window.onload = function () {
 
 // Фильтр категории
 
+	$('.filter-btn-js').click(function () {
+		$('.category-filter').addClass('active');
+	});
+	$('.category-filter__close-btn--js').click(function () {
+		$('.category-filter').removeClass('active');
+	});
 
     $('.category-filter__title').click(function () {
 		$(this).toggleClass("active");
