@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Карточка товара</title>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css"/>
+	<link rel="stylesheet" href="files/libs/fancybox.min.css"/>
+
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script> -->
+
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+	<div class="header__top top-header">
+		<div class="top-header__content container">
+			<div class="top-header__column">
+				<a class="top-header__location" href="#"  data-da=".catalog-header__for-mb-menu,991,5">
+					Санкт-Петербург
+					<svg class="top-header__location-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#chevron"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="top-header__column">
+				<div class="top-header__menu menu-top"  data-da=".catalog-header__for-mb-menu,991,10">
+					<!-- <button type="button" class="menu__icon icon-menu" id="navToggle"><span></span></button> -->
+					<nav class="menu-top__body">
+						<ul class="menu-top__list">
+							<li class="menu-top__item"><span class="menu-top__link active">О нас</span></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Гарантия</a></li>
+							<li class="menu-top__item"><a href="/kontakty.html" class="menu-top__link">Контакты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Реквизиты</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Доставка</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Обмен и возврат</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Дизайнерские решения</a></li>
+							<li class="menu-top__item"><a href="#" class="menu-top__link">Архитекторам и дизайнерам</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__body body-header">
+		<div class="body-header__content container">
+			<div class="body-header__column logo-header">
+				<a class="logo-header__link" href="/">
+					<img class="logo-header__icon" src="img/logo.png" alt="Логотип в шапке">
+				</a>
+			</div>
+			<div class="body-header__column body-header__column--info body-header__column--info--js">
+				<div class="body-header__info info-header">
+					<div class="info-header__column info-header__column--location">
+						<div class="info-header__location">
+							<svg class="info-header__location-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#location"></use>
+							</svg>
+							<span>Бизнес-центр «Тушино»</span>
+						</div>
+						<p class="info-header__address">Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж</p>
+					</div>
+					<div class="info-header__column info-header__column--messenger">
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+							</svg>
+						</a>
+						<a href="#" class="info-header__messenger">
+							<svg class="info-header__messenger-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</div>
+					
+					<div class="info-header__column info-header__column--phone">
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+							<span>Москва&nbsp;и&nbsp;МО</span>
+						</div>
+						<div class="info-header__phone phone-item">
+							<a class="info-header__phone-link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+							<span>Бесплатно&nbsp;по&nbsp;России</span>
+						</div>
+						<a class="info-header__callback callback-link" href="#">
+							Заказать&nbsp;звонок
+							<svg class="callback-link__icon info-header__callback-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="body-header__column body-header__column--links">
+				<div class="body-header__links links-header">
+					<a class="links-header__item header-search-btn" href="#" id="header-search-btn">
+						<svg class="links-header__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+						<div class="links-header__title">Поиск</div> 
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#favorites"></use>
+							</svg>
+							<span>99</span>
+						</div>
+
+						<div class="links-header__title">Избранное</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+							</svg>
+							<span>1</span>
+						</div>
+
+						<div class="links-header__title">Сравнить</div> 						
+					</a>
+					<a class="links-header__item" href="#">
+						<div class="links-header__img">
+							<svg class="links-header__icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#cart"></use>
+							</svg>
+							<span>5</span>
+						</div>
+
+						<div class="links-header__title">Корзина</div> 						
+						<div class="links-header__amount">999&nbsp;000&nbsp;₽</div>
+					</a>
+				</div>
+
+			</div>
+			<div class="body-header__column body-header__column--phone-mobile">
+				<button class="body-header__phone-btn mob-phone-js" type="button">
+					<svg class="body-header__phone-btn-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="body-header__search container" style="display:none;">
+			<div class="header-search">
+				<form>
+					<div class="header-search__input-wrap">
+						<input class="header-search__input" name="text" type="text" placeholder="Поиск по товарам" autocomplete="off"/>
+					</div>
+					<button class="header-search__btn"> 
+						<svg class="header-search__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__bottom bottom-header">
+		<div class="bottom-header__content container">
+			<div class="bottom-header__catalog" data-da=".body-header__content,991,3">
+				<button class="bottom-header__catalog-btn catalog-btn-js" type="button" >
+					<svg class="bottom-header__catalog-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#catalog"></use>
+					</svg>
+					Каталог
+				</button>
+			</div>
+			<div class="bottom-header__body" data-da=".catalog-header__for-mb-menu,991,first">
+				<nav class="bottom-header__nav" >
+					<ul class="bottom-header__list">
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">
+							<svg class="bottom-header__link-icon icon-svg">
+								<use xlink:href="img/icons/sprite-icons.svg#smart-house"></use>
+							</svg> Умный дом</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Освещение для дома</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Уличное освещение</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Розетки и выключатели</a></li>
+						<li class="bottom-header__item"><a href="#" class="bottom-header__link">Электротовары</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="bottom-header__more-link">
+					Ещё
+					<svg class="bottom-header__more-icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#vertical-more"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="bottom-header__important">
+				<svg class="bottom-header__important-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#stop"></use>
+				</svg>
+				Остерегайтесь подделок
+			</div>
+		</div>
+	</div>
+
+	<div class="header__catalog catalog-header container">		
+		<div class="catalog-header__content" style="display: none;">
+			<button class="catalog-header__close-btn catalog-header__close-btn--js" type="button">
+				<svg class="catalog-header__close-btn-icon icon-svg">
+					<use xlink:href="img/icons/sprite-icons.svg#close"></use>
+				</svg>
+			</button>
+			<div class="catalog-header__row">
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-1"></use>
+						</svg>
+						<span>Люстры</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-2"></use>
+						</svg>
+						<span>Потолочные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-3"></use>
+						</svg>
+						<span>Подвесные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-4"></use>
+						</svg>
+						<span>Трековые светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-5"></use>
+						</svg>
+						<span>Настенные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-6"></use>
+						</svg>
+						<span>Настольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-7"></use>
+						</svg>
+						<span>Напольная лампа</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-8"></use>
+						</svg>
+						<span>Линейные светильники</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="catalog-header__col">
+					<a class="catalog-header__category-title" href="#">
+						<svg class="catalog-header__category-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#category-9"></use>
+						</svg>
+						<span>Уличное освещение</span>
+					</a>
+					<ul class="catalog-header__subcategory-list subcategory-list">
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №1</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №2</a>
+						</li>
+						<li class="subcategory-list__item">
+							<a href="#" class="subcategory-list__link">Подкатегория №3</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="catalog-header__for-mb-menu"></div>
+
+		</div>
+
+	</div>
+</header>
+
+
+            <main class="page product-card">
+                <div class="container">
+                    <nav class="page__breadcrumbs breadcrumbs" aria-label="breadcrumb">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>Потолочный светильник</span>
+                            </li>                                    
+                        </ol>                                
+                    </nav>
+                    <div class="page__head">
+                        <h1>Потолочный светильник TK Lighting 6554 Albero White</h1>
+                    </div>
+                    <form class="product-card__box">
+                        <div class="product-card__img product-slider">
+                            <div class="product-slider__swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="product-slider__slide swiper-slide">
+                                        <a class="product-slider__img-wrap" href="img/slide-1.jpg" data-fancybox="sProdCard">
+                                            <img class="product-slider__img" src="img/slide-1.jpg" alt="Потолочный светильник 1">
+                                        </a>                                       
+                                    </div>
+                                    <div class="product-slider__slide swiper-slide">
+                                        <a class="product-slider__img-wrap" href="img/slide-1.jpg" data-fancybox="sProdCard">
+                                            <img class="product-slider__img" src="img/slide-1.jpg" alt="Потолочный светильник 1">
+                                        </a>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-slider__thumbs product-thumbs">
+                                <div class="product-thumbs__swiper swiper" >
+                                    <div class="swiper-wrapper">
+                                        <div class="product-thumbs__slide swiper-slide">
+                                            <div class="product-thumbs__img-wrap">
+                                                <img class="product-thumbs__img" src="img/slide-1.jpg" alt="Потолочный светильник 1 миниатюра">
+                                            </div>
+                                        </div>
+                                        <div class="product-thumbs__slide swiper-slide">
+                                            <div class="product-thumbs__img-wrap">
+                                                <img class="product-thumbs__img" src="img/slide-1.jpg" alt="Потолочный светильник 1 миниатюра">
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="product-card__about about-product">
+                            <div class="about-product__top">
+                                <div class="about-product__reviews">
+                                    <a class="reviews-link" href="#">
+                                        <svg class="reviews-link__icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#balloon"></use>
+                                        </svg>
+                                        3 отзыва
+                                    </a>
+                                </div>
+                                <div class="about-product__add-to">
+                                    <button class="about-product__add-to-btn add-to-favorite" type="button">
+                                        <svg class="about-product__add-to-btn-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#prod-favorite"></use>
+                                        </svg>
+                                    </button> 
+                                    <button class="about-product__add-to-btn add-to-compare active" type="button">
+                                        <svg class="about-product__add-to-btn-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#prod-compare"></use>
+                                        </svg>
+                                    </button>                                       
+                                </div>
+                            </div>
+                            <div class="about-product__price-block price-block">
+                                <!-- <div class="price-block__price">
+                                    34 800 <span>₽</span>
+                                </div> -->
+                                <div class="price-block__price price-block__price--new">
+                                    34 800 <span>₽</span>
+                                </div>
+                                <div class="price-block__price price-block__price--old">
+                                    60 900 <span>₽</span>
+                                </div>
+                                <div class="price-block__discount">
+                                    -45%
+                                </div>
+                            </div>
+                            <div class="about-product__availability about-product__availability--true">
+                                Много на складе
+                            </div>
+                            <!-- <div class="about-product__availability about-product__availability--false">
+                                Под заказ
+                            </div> -->
+                            
+                            <div class="about-product__buttons card-buttons">
+                                <div class="card-buttons__counter">       
+                                    <button class="card-buttons__counter-btn card-buttons__counter-btn--minus" type="button" disabled="disabled" data-type="minus" >
+                                        <svg class="card-buttons__counter-btn-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="card-buttons__counter-input" type="text" name="count" value="1" min="1" max="100">
+                                    <button  class="card-buttons__counter-btn card-buttons__counter-btn--plus" type="button" data-type="plus">
+                                        <svg class="card-buttons__counter-btn-icon icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#plus"></use>
+                                        </svg>
+                                    </button>                                        
+                                </div>
+                                <button class="card-buttons__add-to-cart" type="button">
+                                    <svg class="card-buttons__add-to-cart-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#prod-cart"></use>
+                                    </svg>
+                                    В корзину
+                                </button>
+                                <button class="card-buttons__one-click" type="button">
+                                    <svg class="card-buttons__one-click-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#one-click"></use>
+                                    </svg>
+                                    Купить в 1 клик
+                                </button>
+                            </div>
+                            <div class="about-product__question-block">
+                                <a class="about-product__question-link" href="#">
+                                    Нашли дешевле?
+                                    <svg class="about-product__question-link-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#question"></use>
+                                    </svg>
+                                </a>
+                                <a class="about-product__question-link" href="#">
+                                    Купить в рассрочку
+                                    <svg class="about-product__question-link-icon icon-svg">
+                                        <use xlink:href="img/icons/sprite-icons.svg#question"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="about-product__bottom">
+                                <div class="about-product__characteristics characteristics-block">
+                                    <div class="characteristics-block__item">
+                                        <span class="characteristics-block__key">Код товара:</span>
+                                        1065-845864
+                                    </div>
+                                    <div class="characteristics-block__item">
+                                        <span class="characteristics-block__key">Артикул:</span>
+                                        АРА8457-84JKBC
+                                    </div>
+                                    <div class="characteristics-block__item">
+                                        <span class="characteristics-block__key">Фабрика:</span>
+                                        Minimir (Италия)
+                                    </div> 
+                                </div>
+                                <a class="about-product__all-characteristics smooth-scroll-link-js" data-item="123" href="#123">Все характеристики</a>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="product-card__delivery delivery-card">
+                            <div class="delivery-card__item">
+                                <a class="delivery-card__analog-link" href="#">
+                                    Подобрать аналог
+                                </a>
+                                <div class="delivery-card__block">
+                                    <div class="delivery-card__title">
+                                        Доставка
+                                    </div>
+                                    <ul class="delivery-card__list check-list">
+                                        <li class="check-list__item">
+                                            Доставим Яндекс GO такси в течение 2-х часов от 486р
+                                        </li>
+                                        <li class="check-list__item">
+                                            Забрать в магазине сегодня бесплатно
+                                        </li>
+                                        <li class="check-list__item">
+                                            Курьерская служба “Достависта” в течение дня
+                                        </li>
+                                        <li class="check-list__item">
+                                            Доставка по Москве бесплатная при сумме заказа больше 5000р
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="delivery-card__item">
+                                <div class="delivery-card__benefits">
+                                    <ul class="benefits-list">
+                                        <li class="benefits-list__item">
+                                            <svg class="benefits-list__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#socket"></use>
+                                            </svg>
+                                            Установка и сборка
+                                        </li>
+                                        <li class="benefits-list__item">
+                                            <svg class="benefits-list__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#exchange"></use>
+                                            </svg>
+                                            Обмен и возврат
+                                        </li>
+                                        <li class="benefits-list__item">
+                                            <svg class="benefits-list__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#warranty"></use>
+                                            </svg>
+                                            2 года гарантии
+                                        </li>
+                                        <li class="benefits-list__item">
+                                            <svg class="benefits-list__icon icon-svg">
+                                                <use xlink:href="img/icons/sprite-icons.svg#delivery"></use>
+                                            </svg>
+                                            Доставка Бесплатно
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>                  
+
+                </div><!-- /container -->  
+
+                
+            </main>
+            <footer class="footer">
+	<div class="button-up"></div>
+	<div class="footer__top top-footer">
+		<div class="container">
+			<form class="top-footer__form subscribe-form" action="" >
+				<div class="subscribe-form__title">
+					Подпишитесь на рассылку, чтобы узнавать об акциях первым!
+				</div>
+				<div class="subscribe-form__input-wrap">
+					<input class="subscribe-form__input main-input" name="email" type="email" placeholder="Email" required>
+					<button class="subscribe-form__btn main-button" type="submit">
+						<svg class="main-button__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#subscribe"></use>
+						</svg>
+						Подписаться</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer__body">
+		<div class="body-footer  container">
+			<div class="body-footer__col footer-info">
+				<div class="body-header__column logo-header">
+					
+				</div>
+				<div class="body-footer__logo logo-footer">
+					<a class="logo-footer__link" href="/">
+						<img src="img/logo-white.png" alt="Логотип в футере">
+					</a>					
+				</div>
+				<div class="footer-info__messenger">
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+						</svg>
+					</a>
+					<a class="footer-info__messenger-link" href="#" >
+						<svg class="footer-info__messenger-icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+						</svg>
+					</a>	
+				</div>
+				<div class="footer-info__phones phones-footer">
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:84951234567" >8 (495) 123-45-67</a>
+						<span>Москва и МО</span>
+					</div>
+					<div class="phones-footer__item phone-item">
+						<a class="phones-footer__link phone-item__link" href="tel:88001234567" >8 (800) 123-45-67</a>
+						<span>Бесплатно по России</span>
+					</div>
+					<a class="phones-footer__callback callback-link" href="#">
+						Заказать&nbsp;звонок
+						<svg class="callback-link__icon icon-svg">
+							<use xlink:href="img/icons/sprite-icons.svg#dotted"></use>
+						</svg>
+					</a>
+					<div class="phones-footer__time text-footer">
+						Ежедневно, с&nbsp;09:00 до&nbsp;21:00
+					</div>
+				</div>
+				<div class="footer-info__location">
+					<div class="footer-info__location-title">
+						Бизнес-центр «Тушино»
+					</div>
+					<div class="footer-info__location-text text-footer">
+						Походный проезд, д. 4, корп. 1, офис 412, 4-й этаж
+					</div>			
+				</div>
+				<div class="footer-info__copyright text-footer" data-da=".footer-menu__copy-for-mobile,991,last">
+					Копирайт: 2020 — 2022г. «Интернет-магазин» товаров для Умного дома» ©
+				</div>
+				<a class="footer-info__politics politics-link" href="#" data-da=".footer-menu__copy-for-mobile,991,first">
+					Политика конфиденциальности
+					<svg class="politics-link__icon icon-svg">
+						<use xlink:href="img/icons/sprite-icons.svg#dotted-2"></use>
+					</svg>
+
+				</a>
+	
+			</div>
+			<div class="body-footer__col footer-menu">
+				<div class="footer-menu__wrap">
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Каталог
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Умный дом</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Освещение для дома</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Уличное освещение</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Розетки и выключатели</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Электротовары</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Посуда и принадлежности</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							Помощь покупателю
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="/" >Главная</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Оплата и доставка</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Акции</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu__item">
+						<div class="footer-menu__title">
+							О компании
+						</div>
+						<nav>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >О компании</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="/kontakty.html" >Контакты</a></li>
+								<li class="footer-menu__list-item"><a class="footer-menu__link" href="#" >Дизайнерам</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer-menu__links-wrap">
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Давайте дружить
+						</div>
+						<div class="links-block__icons">
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#vk"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#youtube"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#telegramm"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+								</svg>
+							</a>
+							<a class="links-block__link" href="#" >
+								<svg class="links-block__icon icon-svg">
+									<use xlink:href="img/icons/sprite-icons.svg#yandex-market"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer-menu__links-block links-block">
+						<div class="links-block__title">
+							Принимаем к оплате
+						</div>
+						<div class="links-block__icons">
+							<img class="links-block__img" src="img/pay/visa.svg" alt="Виза">
+							<img class="links-block__img" src="img/pay/mastercard.svg" alt="Mastercard">
+							<img class="links-block__img" src="img/pay/maestro.svg" alt="Maestro">
+							<img class="links-block__img" src="img/pay/mir.svg" alt="Мир">
+							<img class="links-block__img" src="img/pay/yandex.svg" alt="Яндекс">
+							<img class="links-block__img" src="img/pay/webmoney.svg" alt="Webmoney">
+							<img class="links-block__img" src="img/pay/qiwi.svg" alt="Виза">
+						</div>
+					</div>
+				</div>				
+				<div class="footer-menu__copy-for-mobile"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+</footer>
+
+
+<script src="files/libs/jquery.min.js"></script>
+
+<script src="files/libs/dynamic_adapt.js"></script>
+
+<script src="files/libs/swiper-bundle.min.js"></script>
+<script src="files/libs/ion.rangeSlider.min.js"></script>
+<script src="files/libs/fancybox.min.js"></script>
+
+
+<script src="js/app.js"></script> 
+        </div>   
+    </body>
+</html>

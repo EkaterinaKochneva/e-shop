@@ -88,6 +88,23 @@ window.onload = function () {
 
 	  });
 
+	  const swiperProductThumbs = new Swiper('.product-thumbs__swiper', {
+
+		slidesPerView: 'auto',
+		spaceBetween: 15,
+
+	  });
+
+	  const swiperProduct = new Swiper('.product-slider__swiper', {
+
+		slidesPerView: 1,
+		draggable: true,
+
+		thumbs: {
+			swiper: swiperProductThumbs,
+		  },
+	  });
+
 
 // Аккардион FAQ
 
