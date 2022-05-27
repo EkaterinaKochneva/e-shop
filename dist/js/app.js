@@ -85,9 +85,7 @@ window.onload = function () {
 	});
 
 	const swiperExpertHelp = new Swiper('.expert-help__swiper', {
-
 		slidesPerView: 1,
-
 		pagination: {
 		  el: '.expert-help__pagination',
 		  clickable: true,
@@ -101,7 +99,6 @@ window.onload = function () {
 		spaceBetween: 15,
 
 	});
-
 	const swiperProduct = new Swiper('.product-slider__swiper', {
 
 		slidesPerView: 1,
@@ -110,6 +107,17 @@ window.onload = function () {
 		thumbs: {
 			swiper: swiperProductThumbs,
 		  },
+	});
+
+	const swiperAbout = new Swiper('.about-slider__swiper', {
+
+		slidesPerView: 1,
+
+		pagination: {
+		  el: '.about-slider__pagination',
+		  clickable: true,
+		},
+
 	});
 
 
