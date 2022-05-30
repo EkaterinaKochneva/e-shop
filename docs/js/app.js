@@ -1,5 +1,7 @@
 window.onload = function () {
 
+	// Кнопки в шапке
+
 	$(".header-search-btn-js").click(function (e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
@@ -20,6 +22,7 @@ window.onload = function () {
 		$('body').removeClass('fixed-mb');
 	});
 
+	// Слайдеры
 	const swiper = new Swiper('.top-slider__swiper', {
 		loop: true,
 		autoplay: {
@@ -108,6 +111,8 @@ window.onload = function () {
 
 	});
 
+
+// Аккардион FAQ
 	$('.faq__btn').click(function(){
 		if(!$(this).hasClass('active')){	
 			$(this).parents('.faq__wrapper').find('.faq__btn').removeClass('active'); 
@@ -120,7 +125,7 @@ window.onload = function () {
 		}
 	});
 
-
+// Tabs
 	$('.tabs__caption').on('click', '.tabs__btn:not(.active)', function (e) {
 		$(this)
 			.addClass('active').siblings().removeClass('active')
@@ -129,7 +134,7 @@ window.onload = function () {
 
 	});
 
-
+// Плавная прокрутка
 	$(".smooth-scroll-link-js").on("click", function (e) {
 		e.preventDefault();
 		var get_id = $(this).attr('href');
@@ -137,13 +142,14 @@ window.onload = function () {
 		$("html, body").animate({ scrollTop: target }, 500);
 	});
 
-
+//Активация таба
 	$(".tabs-link-js").on("click", function (e) {
 		e.preventDefault();
 		var get_id = $(this).attr('href');
 		$(get_id)[0].click(); 
 	});
 
+// Фильтр категории
 
 	$('.filter-btn-js').click(function () {
 		$('.category-filter').addClass('active');
@@ -160,7 +166,7 @@ window.onload = function () {
 		parent.children(".category-filter__body").slideToggle();
 	});
 
-
+// Кастомный ползунок
 	function currencyFormat(num) {
 		return num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ');
 	} // currencyFormat(num)
@@ -228,7 +234,7 @@ window.onload = function () {
 		});
 	});
 
-
+// Модалки
 	const link = ".link-modal-js";
 	$(link).fancybox({
 		arrows: false,
@@ -283,6 +289,7 @@ Inputmask("+7(999)999-99-99", {
 }).mask(InputTel);
 
 
+// Прокрутка наверх страницы
 	$(window).on('scroll', function () {
 		if ($(this).scrollTop() > 100) {
 		$('.button-up').addClass('scroll');
