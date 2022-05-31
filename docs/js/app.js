@@ -39,7 +39,7 @@ window.onload = function () {
 	document.querySelectorAll('.products-slider').forEach(n => {
 		const swiperNew = new Swiper(n.querySelector('.products-slider__swiper'), {
 			slidesPerView: 1,		
-			loop: true,		
+			loop: true,				
 			breakpoints: {
 				1401: {
 					slidesPerView: 5,
@@ -56,7 +56,11 @@ window.onload = function () {
 					autoHeight: true,
 				},
 				767: {
-					slidesPerView: 2,
+					slidesPerView: 2,	
+					autoHeight: true,				
+				},
+				575: {
+					autoHeight: true,	
 				}
 			},
 			
@@ -77,6 +81,10 @@ window.onload = function () {
 
 	const swiperExpertHelp = new Swiper('.expert-help__swiper', {
 		slidesPerView: 1,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
 		pagination: {
 		  el: '.expert-help__pagination',
 		  clickable: true,

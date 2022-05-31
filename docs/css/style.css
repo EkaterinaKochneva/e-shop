@@ -2582,6 +2582,12 @@ h6 {
   padding-bottom: 34.3%;
 }
 
+.popular-categories__item:hover .popular-categories__img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .popular-categories__item:hover .popular-categories__title {
   background-image: url("data:image/svg+xml,%3Csvg fill='none' viewBox='0 0 13 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5h11.1M7.66.56L12.1 5 7.66 9.44' stroke='%23E30611' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
@@ -2609,6 +2615,11 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .popular-categories__title {
@@ -4943,7 +4954,7 @@ h6 {
     gap: 10px;
   }
 
-  .products-catalog__item--horizontal {
+  .products-catalog__item.products-catalog__item--horizontal {
     width: 100%;
   }
 }
@@ -5648,7 +5659,7 @@ h6 {
   }
 
   .products-slider .swiper-slide {
-    height: auto !important;
+    min-height: 379px;
   }
 
   .popular-categories__item {
@@ -5884,6 +5895,10 @@ h6 {
         -ms-flex: 0 0 49%;
             flex: 0 0 49%;
     text-align: center;
+  }
+
+  .products-slider__swiper {
+    margin-bottom: 20px;
   }
 
   .smart-house__item {
@@ -6277,6 +6292,11 @@ h6 {
             flex: 0 0 90%;
   }
 
+  .products-slider .swiper-slide {
+    height: auto !important;
+    min-height: 100%;
+  }
+
   .products-slider__btn.swiper-button-prev {
     left: -9px;
   }
@@ -6354,6 +6374,21 @@ h6 {
   }
 }
 
+@media (max-width: 475px) {
+  .expert-help__title {
+    top: 20px;
+    left: 17px;
+  }
+
+  .expert-help__slide {
+    padding: 60px 15px 20px;
+  }
+
+  .expert-help__photo {
+    width: 70%;
+  }
+}
+
 @media (max-width: 425px) {
   .popular-categories__item {
     width: 49%;
@@ -6405,6 +6440,10 @@ h6 {
   }
 
   .price-block__price {
+    font-size: 1.5rem;
+  }
+
+  .price-block__price--old {
     font-size: 1.5rem;
   }
 
