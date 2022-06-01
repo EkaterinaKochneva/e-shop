@@ -39,7 +39,8 @@ window.onload = function () {
 	document.querySelectorAll('.products-slider').forEach(n => {
 		const swiperNew = new Swiper(n.querySelector('.products-slider__swiper'), {
 			slidesPerView: 1,		
-			loop: true,				
+			loop: true,	
+			watchSlidesProgress: true,		
 			breakpoints: {
 				1401: {
 					slidesPerView: 5,
