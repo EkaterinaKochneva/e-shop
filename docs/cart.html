@@ -7,11 +7,11 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css?_v=20220602175348"/>
-	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css?_v=20220602175348"/>
-	<link rel="stylesheet" href="files/libs/fancybox.min.css?_v=20220602175348"/>
+	<link rel="stylesheet" href="files/libs/swiper-bundle.min.css?_v=20220603123838"/>
+	<link rel="stylesheet" href="files/libs/ion.rangeSlider.min.css?_v=20220603123838"/>
+	<link rel="stylesheet" href="files/libs/fancybox.min.css?_v=20220603123838"/>
 
-	<link rel="stylesheet" href="css/style.min.css?_v=20220602175348">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220603123838">
 
 </head>
     <body>
@@ -469,7 +469,7 @@
                                                 </a> 
                                             </div>  
                                             <div class="products-cart__name-block">
-                                                <a class="products-cart__title">Трековый светильник для однофазного шинопровода Svit GU10 Черный/хром</a>                                                                                   
+                                                <a class="products-cart__title" href="#">Трековый светильник для однофазного шинопровода Svit GU10 Черный/хром</a>                                                                                   
                                                 <div class="products-cart__vendor">Артикул: MRL 1013</div>  
                                             </div>                                                                                  
                                         </div>
@@ -514,7 +514,7 @@
                                                 </a> 
                                             </div>  
                                             <div class="products-cart__name-block">
-                                                <a class="products-cart__title">Настенный светильник в стиле лофт</a>                                                                                   
+                                                <a class="products-cart__title" href="#">Настенный светильник в стиле лофт</a>                                                                                   
                                                 <div class="products-cart__vendor">Артикул: 70127/1 хром</div>  
                                             </div>                                                                                  
                                         </div>
@@ -575,16 +575,16 @@
                                                 </label>
                                                 <label class="order-form__input-radio custom-checkbox">
                                                     <input class="custom-checkbox__input" value="Самовывоз" name="delivery" type="radio">
-                                                    <span class="custom-checkbox__text form-check-label">Самовывоз из магазина <span class="faded-text">(486 ₽, от 2-х часов)</span></span>
+                                                    <span class="custom-checkbox__text form-check-label">Самовывоз из магазина <span class="order-form__faded-text">Московская область, г. Подольск, д. Борисовка, территория «НКН-Строй», строение 1</span></span>
                                                 </label>
                                                 <label class="order-form__input-radio custom-checkbox">
-                                                    <input class="custom-checkbox__input" value="Достависта" name="delivery" type="radio">
-                                                    <span class="custom-checkbox__text form-check-label">Курьерская служба “Достависта” по Москве  <span class="bold-text">(600 ₽, в течение дня. От 5000 ₽ Бесплатно)</span></span>
-                                                    <input class="order-form__input custom-text-input" name="Адрес доставки" type="text" placeholder="Город, улица, дом, квартира" required="required"/>
+                                                    <input class="custom-checkbox__input" value="Достависта" name="delivery" type="radio" checked>
+                                                    <span class="custom-checkbox__text form-check-label">Курьерская служба “Достависта” по Москве  <span class="bold-text">(600 ₽, в течение дня. От 5000 ₽ Бесплатно)</span></span>                                                    
                                                 </label>
+                                                <input class="order-form__input custom-text-input order-form__input--delivery-addres" name="Адрес доставки" type="text" placeholder="Город, улица, дом, квартира" required="required"/>
                                                 <label class="order-form__input-radio custom-checkbox">
                                                     <input class="custom-checkbox__input" value="В пункт выдачи" name="delivery" type="radio">
-                                                    <span class="custom-checkbox__text form-check-label">В пункт выдачи <span class="bold-text">(400 ₽, 4 дня)</span> <a class="order-form__link" href="#">Выбрать пункт выдачи</a></span>
+                                                    <span class="custom-checkbox__text form-check-label">В пункт выдачи <span class="bold-text">(400 ₽, 4 дня)</span> <a class="order-form__link underline-link" href="#">Выбрать пункт выдачи</a></span>
                                                 </label>
                                                 <label class="order-form__input-radio custom-checkbox">
                                                     <input class="custom-checkbox__input" value="Курьер" name="delivery" type="radio">
@@ -598,24 +598,32 @@
                                                     <span class="custom-checkbox__text form-check-label">Картой на сайте</span>
                                                 </label>
                                                 <label class="order-form__input-radio custom-checkbox">
-                                                    <input class="custom-checkbox__input" value="Оплата при получении" name="pay" type="radio">
+                                                    <input class="custom-checkbox__input" value="Оплата при получении" name="pay" type="radio" checked>
                                                     <span class="custom-checkbox__text form-check-label">Наличными или картой при получении</span>
                                                 </label>
                                                                                             
                                             </fieldset>
                                             <button class="order-form__btn secondary-btn" type="submit">Подтвердить заказ</button>
+                                            <div class="order-form__polite">Подтверждая заказ, Вы соглашаетесь с условиями <a class="underline-link" href="#">политики конфиденциальности</a> и <a class="underline-link" href="#">правилами продажи</a>.</div>
                                         </form>
                                         
                                     </div>
                                     <div class="tabs__content main-tabs__content">
-                                        Быстрый заказ
+                                        <form class="cart__order-one-click order-one-click">
+                                            <div class="order-one-click__text">
+                                                Оставьте свои контактные данные и наш менеджер перезвонит вам в рабочее время и уточнит все детали.
+                                            </div>
+                                            <input class="order-one-click__input custom-text-input" name="Телефон" type="tel" placeholder="+7 (___) ___-__-__" required="required"/>
+                                            <button class="order-one-click__btn secondary-btn" type="submit">Оформить заказ</button>
+                                            <div class="order-form__polite">Оформляя заказ, Вы соглашаетесь с условиями <a class="underline-link" href="#">политики конфиденциальности</a> и <a class="underline-link" href="#">правилами продажи</a>.</div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                             
                         </div>
                         <div class="cart__col cart__col--total">
-                            <div class="cart__total total-cart">
+                            <div class="cart__total total-cart" data-da=".cart__total-for-mobile,991,1">
                                 <div class="total-cart__amount">
                                     <div class="total-cart__amount-key">Итого:</div>
                                     <div class="total-cart__amount-val">8 090 ₽</div>
@@ -1137,14 +1145,14 @@
 </div>
 <!-- /Modals-->
 
-<script src="files/libs/jquery.min.js?_v=20220602175348"></script>
-<script src="files/libs/dynamic_adapt.js?_v=20220602175348"></script>
-<script src="files/libs/swiper-bundle.min.js?_v=20220602175348"></script>
-<script src="files/libs/ion.rangeSlider.min.js?_v=20220602175348"></script>
-<script src="files/libs/fancybox.min.js?_v=20220602175348"></script>
-<script src="files/libs/inputmask.min.js?_v=20220602175348"></script>
+<script src="files/libs/jquery.min.js?_v=20220603123838"></script>
+<script src="files/libs/dynamic_adapt.js?_v=20220603123838"></script>
+<script src="files/libs/swiper-bundle.min.js?_v=20220603123838"></script>
+<script src="files/libs/ion.rangeSlider.min.js?_v=20220603123838"></script>
+<script src="files/libs/fancybox.min.js?_v=20220603123838"></script>
+<script src="files/libs/inputmask.min.js?_v=20220603123838"></script>
 
-<script src="js/app.js?_v=20220602175348"></script> 
+<script src="js/app.js?_v=20220603123838"></script> 
         </div>   
     </body>
 </html>
